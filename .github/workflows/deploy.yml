@@ -36,10 +36,10 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
           script: |
-            cd /Users/veer/desktop/coding/python-app
-            docker compose down
-            docker compose pull
-            docker compose up -d --build
+            cd /home/ubuntu/python-flask-deploy-
+            sudo docker compose down
+            sudo docker compose pull
+            sudo docker compose up -d --build
 
       
 
